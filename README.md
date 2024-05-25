@@ -54,9 +54,11 @@ tribute of the NumPy array representing the image.
  • Computing New Corner Points: The corner points of the detected marker
  are used to compute new corner points for enlarging the replacement image
  based on the scale factor.
+
  • Performing Perspective Transformation: A perspective transformation
  is applied to the replacement image to align it with the detected marker using
  cv2.getPerspectiveTransform() and cv2.warpPerspective().
+ 
  • Creating a Mask: A mask is created to define the region of interest for
  blending the replacement image with the original image.
 
