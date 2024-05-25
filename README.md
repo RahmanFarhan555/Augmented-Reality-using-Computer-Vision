@@ -59,13 +59,13 @@ tribute of the NumPy array representing the image.
  cv2.getPerspectiveTransform() and cv2.warpPerspective().
  • Creating a Mask: A mask is created to define the region of interest for
  blending the replacement image with the original image.
+
  ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/76aff7be-c6b9-40a7-a459-49f4cd3d0cf1)
+ 
  • Blending Images: The replacement image is combined with the original image using bitwise operations (cv2.bitwise and() and cv2.bitwise or()) to overlay
  it on the detected marker.
+ 
  ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/00ad3c9d-0fd8-4cce-be3d-996cff2d8fc8)
-
-
-
 
  Finally, the processed image with overlaid ArUco markers is displayed in a
  window using cv2.imshow(), and the program waits for a key press before
