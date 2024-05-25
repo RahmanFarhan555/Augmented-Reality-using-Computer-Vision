@@ -31,23 +31,24 @@
  (gray) using the cv2.aruco.detectMarkers() function. This function returns
  the corners of detected markers (corners), their corresponding IDs (ids), and
  rejected points (rejectedImgPoints).
+![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/818dc9b1-8691-4961-a96f-21bfce3bd72e)
 
- 5. Loading the Replacement Image:
+ 6. Loading the Replacement Image:
  • replacement image = cv2.imread(‘images/overlay image.jpg’): Another im
 age, named ‘overlay image.jpg’, is loaded from the ’images’ folder using cv2.imread().
  This image will be overlaid onto the detected markers.
 
- 6. Calculating Replacement Image Dimensions:
+ 7. Calculating Replacement Image Dimensions:
  • replacement height, replacement width = replacement image.shape[:2]: The
  height and width of the replacement image are obtained using the shape at
 tribute of the NumPy array representing the image.
 
- 7. Defining a Scale Factor:
+ 8. Defining a Scale Factor:
  • scale factor = 6: A scale factor is defined to adjust the size of the replacement
  image relative to the size of the detected markers. This factor determines how
  much the replacement image will be enlarged.
 
- 8. Iterating Through Detected Markers:
+ 9. Iterating Through Detected Markers:
  • for i in range(len(ids)):: A loop iterates through each detected marker.
  The subsequent lines within the loop perform the following tasks:
  • Computing New Corner Points: The corner points of the detected marker
@@ -58,11 +59,9 @@ tribute of the NumPy array representing the image.
  cv2.getPerspectiveTransform() and cv2.warpPerspective().
  • Creating a Mask: A mask is created to define the region of interest for
  blending the replacement image with the original image.
+ ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/76aff7be-c6b9-40a7-a459-49f4cd3d0cf1)
  • Blending Images: The replacement image is combined with the original image using bitwise operations (cv2.bitwise and() and cv2.bitwise or()) to overlay
  it on the detected marker.
-
- ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/818dc9b1-8691-4961-a96f-21bfce3bd72e)
-                                                                             ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/76aff7be-c6b9-40a7-a459-49f4cd3d0cf1)
  ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/00ad3c9d-0fd8-4cce-be3d-996cff2d8fc8)
 
 
