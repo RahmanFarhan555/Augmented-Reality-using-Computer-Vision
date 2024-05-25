@@ -62,7 +62,7 @@ tribute of the NumPy array representing the image.
  it on the detected marker.
 
  ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/818dc9b1-8691-4961-a96f-21bfce3bd72e)
- ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/76aff7be-c6b9-40a7-a459-49f4cd3d0cf1)
+                                                                             ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/76aff7be-c6b9-40a7-a459-49f4cd3d0cf1)
  ![image](https://github.com/RahmanFarhan555/Augmented-Reality-using-Computer-Vision/assets/170820777/00ad3c9d-0fd8-4cce-be3d-996cff2d8fc8)
 
 
